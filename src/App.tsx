@@ -1,56 +1,38 @@
 import "./App.css";
 
-import { Application, extend, useAssets } from "@pixi/react";
-import { Container, Sprite, Text } from "pixi.js";
-import { FancyButton } from "@pixi/ui";
-import { Signal } from "typed-signals";
+import { useRef, useState } from "react";
+import { Application } from "@pixi/react";
 
-extend({
-	Container,
-	Sprite,
-	Text,
-	FancyButton,
-});
+import Background from "./Background";
+import Gameplay from "./Gameplay";
+import UI from "./UI";
 
 const App = () => {
-	const {
-		assets: [buttonTexture, buttonHoverTexture, buttonPressedTexture],
-		isSuccess,
-	} = useAssets([
-		"assets/button.png",
-		"assets/button_hover.png",
-		"assets/button_pressed.png",
-	]);
+	const [showUI, setShowUI] = useState(true);
+	const gameplayRef = useRef<{ start: () => void; end: () => void } | null>(
+		null
+	);
 
-	let mySignal = new Signal<() => void>();
-	mySignal.connect(() => console.log("Button pressed!"));
+	const startGame = () => {
+		if (gameplayRef.current) {
+			gameplayRef.current.start();
+		}
+		// Hide the UI when the game starts
+		setShowUI(false);
+	};
 
-	const buttonDefaultSprite = new Sprite({ texture: buttonTexture });
-	const buttonHoverSprite = new Sprite({ texture: buttonHoverTexture });
-	const buttonPressedSprite = new Sprite({ texture: buttonPressedTexture });
-	const buttonText = new Text({
-		text: "Start",
-		style: { fill: "#FFFFFF", fontSize: 50 },
-	});
+	const endGame = () => {
+		if (gameplayRef.current) {
+			gameplayRef.current.end();
+		}
+		setShowUI(true); // Show UI when the game ends
+	};
 
 	return (
 		<Application width={1200} height={675}>
-			{isSuccess && (
-				<fancyButton
-					defaultView={buttonDefaultSprite}
-					hoverView={buttonHoverSprite}
-					pressedView={buttonPressedSprite}
-					textView={buttonText}
-					x={600}
-					y={337.5}
-					width={200}
-					height={80}
-					anchorX={0.5}
-					anchorY={0.5}
-					// onPress={() => {console.log('Button pressed!');}}
-					onPress={mySignal}
-				/>
-			)}
+			<Background width={1200} height={675} />
+			{showUI && <UI width={1200} height={675} onStartClick={startGame} />}
+			<Gameplay ref={gameplayRef} onGameEnd={endGame} />
 		</Application>
 	);
 };

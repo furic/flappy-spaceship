@@ -1,0 +1,97 @@
+{
+  "hash": "fbb8c185",
+  "configHash": "702005e7",
+  "lockfileHash": "90f9a54c",
+  "browserHash": "a97b775a",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "b6ce4b6f",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "cb9da81b",
+      "needsInterop": true
+    },
+    "@pixi/react": {
+      "src": "../../node_modules/@pixi/react/lib/index.mjs",
+      "file": "@pixi_react.js",
+      "fileHash": "2a43581c",
+      "needsInterop": false
+    },
+    "pixi.js": {
+      "src": "../../node_modules/pixi.js/lib/index.mjs",
+      "file": "pixi__js.js",
+      "fileHash": "46a9eb8c",
+      "needsInterop": false
+    },
+    "@pixi/ui": {
+      "src": "../../node_modules/@pixi/ui/lib/index.mjs",
+      "file": "@pixi_ui.js",
+      "fileHash": "db83ac49",
+      "needsInterop": false
+    },
+    "typed-signals": {
+      "src": "../../node_modules/typed-signals/dist/index.js",
+      "file": "typed-signals.js",
+      "fileHash": "87f02c1e",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "WebGPURenderer-FZTFYNEL": {
+      "file": "WebGPURenderer-FZTFYNEL.js"
+    },
+    "WebGLRenderer-XO2ZT3LP": {
+      "file": "WebGLRenderer-XO2ZT3LP.js"
+    },
+    "chunk-W6YIYKFX": {
+      "file": "chunk-W6YIYKFX.js"
+    },
+    "chunk-WNPTCGAH": {
+      "file": "chunk-WNPTCGAH.js"
+    },
+    "chunk-ORRGNBIM": {
+      "file": "chunk-ORRGNBIM.js"
+    },
+    "chunk-5GWNOAMS": {
+      "file": "chunk-5GWNOAMS.js"
+    },
+    "chunk-BE6YIHCX": {
+      "file": "chunk-BE6YIHCX.js"
+    },
+    "chunk-VJASXKLJ": {
+      "file": "chunk-VJASXKLJ.js"
+    },
+    "chunk-RHSISHZD": {
+      "file": "chunk-RHSISHZD.js"
+    },
+    "browserAll-IYNZOLRJ": {
+      "file": "browserAll-IYNZOLRJ.js"
+    },
+    "chunk-CBS7UKQU": {
+      "file": "chunk-CBS7UKQU.js"
+    },
+    "webworkerAll-HAZNK67A": {
+      "file": "webworkerAll-HAZNK67A.js"
+    },
+    "chunk-G5FADL5B": {
+      "file": "chunk-G5FADL5B.js"
+    },
+    "chunk-P3YV5OXK": {
+      "file": "chunk-P3YV5OXK.js"
+    },
+    "chunk-LQXUUTA4": {
+      "file": "chunk-LQXUUTA4.js"
+    },
+    "chunk-IMN33NWI": {
+      "file": "chunk-IMN33NWI.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}

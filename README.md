@@ -1,8 +1,12 @@
 # Flippy Spaceship - A Pixi-React v8 Game
 
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/flippy-spaceship) ![License](https://img.shields.io/badge/license-MIT-blue)
+
 **Flippy Spaceship** is a re-skinned version of the classic Flappy Bird game, featuring a space theme. Built using the latest [Pixi-React v8 Beta](https://github.com/pixijs/pixi-react), this project brings a fresh and engaging look to the familiar gameplay.
 
-Inspired by and translated from the original project, [Flappy Bird Game (Vue3 and PixiJS)](https://github.com/hairyf/vue3-pixi-flappy-bird/tree/main), this version shifts the aesthetic to a space-themed adventure while leveraging the power of Pixi-React.
+Inspired by and translated from the original project, [Flappy Bird Game (Vue3 and PixiJS)](https://github.com/hairyf/vue3-pixi-flappy-bird/tree/main), **Flippy Spaceship** retains the core mechanics of the original while shifting to a space adventure aesthetic. It’s designed not only as a fun game but also as a demonstration of what Pixi-React can do.
+
+Check out the [Live Demo](https://flippy-spaceship.vercel.app).
 
 <p align="center">
   <img src="./public/screenshots/1.png" height="400px">

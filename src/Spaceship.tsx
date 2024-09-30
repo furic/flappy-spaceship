@@ -12,7 +12,6 @@ interface SpaceshipProps {
 	y: number;
 	disabled?: boolean;
 	onDie: () => void;
-	onUpdateX: (x: number) => void;
 	onUpdateY: (y: number) => void;
 }
 
@@ -21,9 +20,7 @@ const Spaceship = ({
 	y,
 	disabled = false,
 	onDie,
-	onUpdateX,
 	onUpdateY,
-	width,
 	height,
 }: SpaceshipProps & Size) => {
 	const {
@@ -31,7 +28,6 @@ const Spaceship = ({
 		isSuccess,
 	} = useAssets(["assets/spaceship.png"]);
 
-	const [posX, setPosX] = useState(x);
 	const [posY, setPosY] = useState(y);
 	const [velocity, setVelocity] = useState(6);
 	const gravity = 0.2;
@@ -99,15 +95,14 @@ const Spaceship = ({
 	// // Update parent's x and y state
 	useEffect(() => {
 		if (disabled) return;
-		onUpdateX(posX);
 		onUpdateY(posY);
-	}, [posX, posY, onUpdateX, onUpdateY]);
+	}, [posY, onUpdateY]);
 
 	return (
 		isSuccess && (
 			<sprite
 				texture={spaceshipTexture}
-				x={posX}
+				x={x}
 				y={posY}
 				width={60}
 				height={40}

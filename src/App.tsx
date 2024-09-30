@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { Application } from "@pixi/react";
 
 import Background from "./Background";

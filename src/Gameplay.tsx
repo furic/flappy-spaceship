@@ -164,7 +164,6 @@ const Gameplay = forwardRef(
 							y={spaceshipY}
 							disabled={!gameStarted}
 							onDie={onGameEnd}
-							onUpdateX={(newX) => setSpaceshipX(newX)}
 							onUpdateY={(newY) => setSpaceshipY(newY)}
 							width={width}
 							height={height}

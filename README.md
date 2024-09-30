@@ -1,53 +1,40 @@
-# flippy-spaceship
-A Flippy Bird-like game with spaceship theme with Pixi-React v8
+# Flippy Spaceship - A Pixi-React v8 Game
+
+**Flippy Spaceship** is a re-skinned version of the classic Flappy Bird game, featuring a space theme. Built using the latest [Pixi-React v8 Beta](https://github.com/pixijs/pixi-react), this project brings a fresh and engaging look to the familiar gameplay.
+
+Inspired by and translated from the original project, [Flappy Bird Game (Vue3 and PixiJS)](https://github.com/hairyf/vue3-pixi-flappy-bird/tree/main), this version shifts the aesthetic to a space-themed adventure while leveraging the power of Pixi-React.
+
+<p align="center">
+  <img src="./public/screenshots/1.png" height="400px">
+</p>
+
+This project also serves as an exploration of Pixi-React v8 Beta and is inspired by the [Web Game Challenge](https://dev.to/devteam/announcing-the-game-off-2d-game-challenge-3dka) on Dev.to.
 
 ---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+### 1. Install Dependencies
+First, ensure all project dependencies are installed:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+pnpm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Run the Development Server
+To start the game in development mode, run:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+pnpm run dev
 ```
+
+Then, open your browser and go to `http://localhost:5173` to start playing the game.
+
+## Contributing
+
+We welcome contributions! If you encounter any issues or have ideas for improvements, feel free to open an issue or submit a pull request. Please follow the existing code style and conventions when contributing.
+
+## License
+
+This project is licensed under the [MIT LICENSE](./LICENSE).
+© 2024-PRESENT [furic](https://github.com/furic)

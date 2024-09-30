@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Application } from "@pixi/react";
 
 import Background from "./Background";
@@ -31,8 +31,13 @@ const App = () => {
 	return (
 		<Application width={1200} height={675}>
 			<Background width={1200} height={675} />
-			{showUI && <UI width={1200} height={675} onStartClick={startGame} />}
-			<Gameplay ref={gameplayRef} onGameEnd={endGame} />
+			<UI width={1200} height={675} showUI={showUI} onStartClick={startGame} />
+			<Gameplay
+				width={1200}
+				height={675}
+				ref={gameplayRef}
+				onGameEnd={endGame}
+			/>
 		</Application>
 	);
 };

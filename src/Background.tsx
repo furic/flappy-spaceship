@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { extend, useTick } from "@pixi/react";
-import { Sprite, Graphics } from "pixi.js";
+import { type Size, Graphics } from "pixi.js";
 
-import { Size } from './types';
 import Star from "./Star";
 
-extend({ Sprite, Graphics });
+extend({ Graphics });
 
 const STAR_RADIUS = 2;
 const STAR_COUNT = 100;

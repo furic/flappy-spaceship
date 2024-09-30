@@ -1,40 +1,63 @@
-import { extend, useAssets } from "@pixi/react";
-import { Sprite, Text } from "pixi.js";
+import { useEffect } from "react";
+import { extend, useAsset } from "@pixi/react";
+import { type Size, Text } from "pixi.js";
 
-import { Size } from "./types";
-
-extend({ Sprite, Text });
+extend({ Text });
 
 interface UIProps {
+	showUI: boolean;
 	onStartClick: () => void;
 }
 
-const UI = ({ width, height, onStartClick }: Size & UIProps) => {
-	const {
-		assets: [buttonTexture],
-		isSuccess,
-	} = useAssets(["assets/button.png"]);
+const UI = ({ width, height, showUI, onStartClick }: Size & UIProps) => {
+	useAsset("assets/flappy-bird.ttf");
+
+	// Add a keydown listener for the spacebar
+	useEffect(() => {
+		const handleKeyDown = (event: KeyboardEvent) => {
+			if (event.key === " ") {
+				onStartClick();
+			}
+		};
+
+		if (showUI) {
+			window.addEventListener("keydown", handleKeyDown);
+		}
+
+		return () => {
+			window.removeEventListener("keydown", handleKeyDown);
+		};
+	}, [showUI, onStartClick]);
 
 	return (
-		isSuccess && (
+		showUI && (
 			<>
-				<sprite
-					texture={buttonTexture}
+				<pixiText
+					text={"Flippy\nSpaceship"}
 					x={width / 2}
-					y={height * 0.75}
-					width={300}
-					height={80}
+					y={height * 0.45}
 					anchor={0.5}
+					style={{
+						fontFamily: "Flappy Bird",
+						fill: "#FFFFFF",
+						fontSize: 150,
+						align: "center",
+					}}
 					interactive={true}
 					cursor="pointer"
 					onPointerDown={onStartClick}
 				/>
 				<pixiText
-					text="Start"
+					text="Click or press spacebar to start"
 					x={width / 2}
-					y={height * 0.75}
+					y={height * 0.95}
 					anchor={0.5}
-					style={{ fill: "#FFFFFF", fontSize: 50 }}
+					style={{
+						fontFamily: "Flappy Bird",
+						fill: "#FFFFFF",
+						fontSize: 23,
+						align: "center",
+					}}
 				/>
 			</>
 		)

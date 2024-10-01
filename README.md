@@ -4,15 +4,15 @@
 
 **Flippy Spaceship** is a re-skinned version of the classic Flappy Bird game, featuring a space theme. Built using the latest [Pixi-React v8 Beta](https://github.com/pixijs/pixi-react/tree/beta), this project brings a fresh and engaging look to the familiar gameplay.
 
-Inspired by and translated from the original project, [Flappy Bird Game (Vue3 and PixiJS)](https://github.com/hairyf/vue3-pixi-flappy-bird/tree/main), **Flippy Spaceship** retains the core mechanics of the original while shifting to a space adventure aesthetic. It’s designed not only as a fun game but also as a demonstration of what Pixi-React can do.
+This project was submitted to Dev.to’s [Web Game Challenge](https://dev.to/challenges/webgame), Build a Game: Alien Edition.
 
-Check out the [Live Demo](https://flippy-spaceship.vercel.app).
+Inspired by and translated from the original project, [Flappy Bird Game (Vue3 and PixiJS)](https://github.com/hairyf/vue3-pixi-flappy-bird/tree/main), I ported the codebase to React and leveraged the Pixi-React library to showcase its capabilities.
+
+Check out the [Live Demo](https://flippy-spaceship.vercel.app). Use mouse clicks or the spacebar to play.
 
 <p align="center">
   <img src="./public/screenshots/1.png" height="400px">
 </p>
-
-This project also serves as an exploration of Pixi-React v8 Beta and is inspired by the [Web Game Challenge](https://dev.to/devteam/announcing-the-game-off-2d-game-challenge-3dka) on Dev.to.
 
 ---
 
@@ -36,16 +36,12 @@ Then, open your browser and go to `http://localhost:5173` to start playing the g
 
 
 ## TODO
-- Add sound effects and background music
-- Implement saving and loading of high scores
-- Add a wormhole mechanic that quickly advances the player a set distance
-- Introduce floating quantum cores as in-game currency
-- Create a shop where players can buy new skins for their spaceship
-
-
-## Contributing
-
-We welcome contributions! If you encounter any issues or have ideas for improvements, feel free to open an issue or submit a pull request. Please follow the existing code style and conventions when contributing.
+- Add simple spaceship animation
+- Incorporate sound effects and background music
+- Implement high score saving and loading
+- Add a wormhole mechanic to advance the player over a set distance
+- Introduce floating quantum cores as an in-game currency
+- Create a shop where players can buy new spaceship skins
 
 
 ## Free Asset Credits

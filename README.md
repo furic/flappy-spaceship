@@ -1,8 +1,8 @@
 # Flippy Spaceship - A Pixi-React v8 Game
 
-![Vercel Deploy](https://deploy-badge.vercel.app/vercel/flippy-spaceship) ![License](https://img.shields.io/badge/license-MIT-blue)
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/flippy-spaceship) ![React](https://img.shields.io/badge/react-v18.3.1-85d9f7.svg) ![Pixi](https://img.shields.io/badge/pixi-v8.4.1-df3062.svg) ![License](https://img.shields.io/badge/license-MIT-greeen)
 
-**Flippy Spaceship** is a re-skinned version of the classic Flappy Bird game, featuring a space theme. Built using the latest [Pixi-React v8 Beta](https://github.com/pixijs/pixi-react), this project brings a fresh and engaging look to the familiar gameplay.
+**Flippy Spaceship** is a re-skinned version of the classic Flappy Bird game, featuring a space theme. Built using the latest [Pixi-React v8 Beta](https://github.com/pixijs/pixi-react/tree/beta), this project brings a fresh and engaging look to the familiar gameplay.
 
 Inspired by and translated from the original project, [Flappy Bird Game (Vue3 and PixiJS)](https://github.com/hairyf/vue3-pixi-flappy-bird/tree/main), **Flippy Spaceship** retains the core mechanics of the original while shifting to a space adventure aesthetic. It’s designed not only as a fun game but also as a demonstration of what Pixi-React can do.
 
@@ -34,9 +34,26 @@ pnpm run dev
 
 Then, open your browser and go to `http://localhost:5173` to start playing the game.
 
+
+## TODO
+- Add sound effects and background music
+- Implement saving and loading of high scores
+- Add a wormhole mechanic that quickly advances the player a set distance
+- Introduce floating quantum cores as in-game currency
+- Create a shop where players can buy new skins for their spaceship
+
+
 ## Contributing
 
 We welcome contributions! If you encounter any issues or have ideas for improvements, feel free to open an issue or submit a pull request. Please follow the existing code style and conventions when contributing.
+
+
+## Free Asset Credits
+
+- [Retro Pixel Rocket Vector by brgfx](https://www.freepik.com/free-vector/retro-pixel-rocket-vector_50448014.htm)
+- [Rock Pixel Art by leesons](https://www.cleanpng.com/png-clip-art-rock-portable-network-graphics-computer-i-6940406/)
+- [Flappy Bird Font by Font Co.](https://www.fontspace.com/flappy-bird-font-f21349)
+
 
 ## License
 

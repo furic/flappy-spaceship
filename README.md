@@ -34,8 +34,9 @@ pnpm run dev
 
 Then, open your browser and go to `http://localhost:5173` to start playing the game.
 
+
 ## Dev Journey
-(Dev Journey)[https://www.richardfu.net/flippy-spaceship-exploring-the-frontiers-of-pixi-react-v8-beta/]
+[Dev Journey](https://www.richardfu.net/flippy-spaceship-exploring-the-frontiers-of-pixi-react-v8-beta/)
 
 
 ## TODO

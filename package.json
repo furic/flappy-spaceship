@@ -1,7 +1,7 @@
 {
-  "name": "flippy-spaceship",
+  "name": "flappy-spaceship",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@pixi/react": "^8.0.0-beta.14",
+    "@pixi/react": "^8.0.0-beta.21",
     "pixi.js": "^8.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

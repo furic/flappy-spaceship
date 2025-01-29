@@ -80,7 +80,6 @@ const Gameplay = forwardRef(
 				const lastPipeIndex = pipes.findIndex((pipe) => pipe.x > prevX + PIPE_DISTANCE / 2);
 				const pipeIndex = pipes.findIndex((pipe) => pipe.x > x + PIPE_DISTANCE / 2);
 
-        console.log(lastPipeIndex, pipeIndex);
 				if (pipeIndex !== lastPipeIndex) {
 					// audios.point.play();
 					setScore((prevScore) => prevScore + 1);

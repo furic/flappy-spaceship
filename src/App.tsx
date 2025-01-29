@@ -1,11 +1,11 @@
-import "./App.css";
+import './App.css';
 
-import { useRef, useState } from "react";
-import { Application } from "@pixi/react";
+import { useRef, useState } from 'react';
+import { Application } from '@pixi/react';
 
-import Background from "./Background";
-import Gameplay from "./Gameplay";
-import UI from "./UI";
+import Background from './Background';
+import Gameplay from './Gameplay';
+import UI from './UI';
 
 const App = () => {
 	const [showUI, setShowUI] = useState(true);

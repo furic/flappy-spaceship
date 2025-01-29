@@ -1,7 +1,5 @@
 import { extend } from "@pixi/react";
-import { Graphics } from "pixi.js";
-
-import { Point } from "./types";
+import { type Point, Graphics } from "pixi.js";
 
 extend({ Graphics });
 

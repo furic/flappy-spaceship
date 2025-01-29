@@ -51,8 +51,8 @@ Then, open your browser and go to `http://localhost:5173` to start playing the g
 ## Free Asset Credits
 
 - [Retro Pixel Rocket Vector by brgfx](https://www.freepik.com/free-vector/retro-pixel-rocket-vector_50448014.htm)
-- [Rock Pixel Art by leesons](https://www.cleanpng.com/png-clip-art-rock-portable-network-graphics-computer-i-6940406/)
 - [Flappy Bird Font by Font Co.](https://www.fontspace.com/flappy-bird-font-f21349)
+- [Rock Pixel Art by DeepAI](https://deepai.org/)
 
 
 ## License

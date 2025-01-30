@@ -6,7 +6,6 @@ interface PipeProps {
 }
 
 const Pipes = ({ pipes, offset }: PipeProps) => {
-	// console.log(pipes)
 	return (
 		<>
 			{pipes.map((pipe) => (

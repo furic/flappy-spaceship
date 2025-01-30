@@ -80,7 +80,6 @@ const Gameplay = forwardRef(
 				const lastPipeIndex = pipes.findIndex((pipe) => pipe.x > prevX + PIPE_DISTANCE / 2);
 				const pipeIndex = pipes.findIndex((pipe) => pipe.x > x + PIPE_DISTANCE / 2);
 
-        console.log(lastPipeIndex, pipeIndex);
 				if (pipeIndex !== lastPipeIndex) {
 					// audios.point.play();
 					setScore((prevScore) => prevScore + 1);
@@ -90,8 +89,8 @@ const Gameplay = forwardRef(
 				if (collisionPipeIndex === -1) return;
 
 				const pipe = pipes[collisionPipeIndex];
-				const top = new Rectangle(pipe.x - 45, pipe.y - 65 - 1000, 90, 1000);
-				const bottom = new Rectangle(pipe.x - 45, pipe.y + 65, 90, 1000);
+				const top = new Rectangle(pipe.x - 45, pipe.y - 100 - 1000, 90, 1000);
+				const bottom = new Rectangle(pipe.x - 45, pipe.y + 100, 90, 1000);
 
 				if (
 					top.contains(x + spaceshipX, spaceshipY) ||

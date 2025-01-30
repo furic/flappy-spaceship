@@ -12,7 +12,7 @@ interface UIProps {
 const UI = ({ width, height, showUI, onStartClick }: Size & UIProps) => {
 	useAsset("assets/flappy-bird.ttf");
 
-	// Add a keydown listener for the spacebar
+	// Add a keydown listener for the space bar
 	useEffect(() => {
 		const handleKeyDown = (event: KeyboardEvent) => {
 			if (event.key === " ") {
@@ -33,7 +33,7 @@ const UI = ({ width, height, showUI, onStartClick }: Size & UIProps) => {
 		showUI && (
 			<>
 				<pixiText
-					text={"Flippy\nSpaceship"}
+					text={"Flappy\nSpaceship"}
 					x={width / 2}
 					y={height * 0.45}
 					anchor={0.5}

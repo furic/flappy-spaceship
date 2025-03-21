@@ -1,14 +1,14 @@
-# Flippy Spaceship - A Pixi-React v8 Game
+# Flappy Spaceship - A Pixi-React v8 Game
 
-![Vercel Deploy](https://deploy-badge.vercel.app/vercel/flippy-spaceship) ![React](https://img.shields.io/badge/react-v18.3.1-85d9f7.svg) ![Pixi](https://img.shields.io/badge/pixi-v8.4.1-df3062.svg) ![License](https://img.shields.io/badge/license-MIT-greeen)
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/flappy-spaceship) ![React](https://img.shields.io/badge/react-v18.3.1-85d9f7.svg) ![Pixi](https://img.shields.io/badge/pixi-v8.4.1-df3062.svg) ![License](https://img.shields.io/badge/license-MIT-greeen)
 
-**Flippy Spaceship** is a re-skinned version of the classic Flappy Bird game, featuring a space theme. Built using the latest [Pixi-React v8 Beta](https://github.com/pixijs/pixi-react/tree/beta), this project brings a fresh and engaging look to the familiar gameplay.
+**Flappy Spaceship** is a re-skinned version of the classic Flappy Bird game, featuring a space theme. Built using the latest [Pixi-React v8 Beta](https://github.com/pixijs/pixi-react/tree/beta), this project brings a fresh and engaging look to the familiar gameplay.
 
 This project was submitted to Dev.to’s [Web Game Challenge](https://dev.to/challenges/webgame), Build a Game: Alien Edition.
 
 Inspired by and translated from the original project, [Flappy Bird Game (Vue3 and PixiJS)](https://github.com/hairyf/vue3-pixi-flappy-bird/tree/main), I ported the codebase to React and leveraged the Pixi-React library to showcase its capabilities.
 
-Check out the [Live Demo](https://flippy-spaceship.vercel.app). Use mouse clicks or the spacebar to play.
+Check out the [Live Demo](https://flappy-spaceship.vercel.app). Use mouse clicks or the spacebar to play.
 
 <p align="center">
   <img src="./public/screenshots/1.png" height="400px">
@@ -36,7 +36,7 @@ Then, open your browser and go to `http://localhost:5173` to start playing the g
 
 
 ## Dev Journey
-[Dev Journey](https://www.richardfu.net/flippy-spaceship-exploring-the-frontiers-of-pixi-react-v8-beta/)
+[Dev Journey](https://www.richardfu.net/flappy-spaceship-exploring-the-frontiers-of-pixi-react-v8-beta/)
 
 
 ## TODO
